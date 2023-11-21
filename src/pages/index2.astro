@@ -388,7 +388,7 @@ import Layout from "../layouts/Layout.astro";
 											/>
 										</li>
 										<li class="border-left">‘봄 작가, 겨울무대’ 공연 할인</li>
-										<li class="icon">
+										<li class="icon icon-event">
 											<ul class="link-layer">
 												<li>
 													<a
@@ -455,7 +455,7 @@ import Layout from "../layouts/Layout.astro";
 											/>
 										</li>
 										<li class="border-left">예술의전당 공연/전시 할인</li>
-										<li class="icon">
+										<li class="icon icon-event">
 											<ul class="link-layer">
 												<li>
 													<a
@@ -564,7 +564,7 @@ import Layout from "../layouts/Layout.astro";
 											연천군 시설관리공단<br />
 											 공연/전시 할인
 										</li>
-										<li class="icon">
+										<li class="icon icon-event">
 											<ul class="link-layer">
 												<li>
 													<a
@@ -739,4 +739,15 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</div>
 	</div>
+
+	<script>
+		let clickEvent = document.querySelectorAll(".icon-event");
+		let lickLayer = document.querySelectorAll(".link-layer");
+
+		for (let i = 0; i <= clickEvent.length; i++) {
+			clickEvent[i].addEventListener("click", function () {
+				lickLayer[i].classList.toggle("on");
+			});
+		}
+	</script>
 </Layout>

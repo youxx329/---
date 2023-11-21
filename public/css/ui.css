@@ -485,6 +485,9 @@ button {
   font-size: inherit;
   margin-right: 10px;
 }
+.section-exam .organ-inner .organ-wrap .icon-event {
+  cursor: pointer;
+}
 .section-exam .organ-inner .organ-wrap .link-layer {
   display: none;
 }
