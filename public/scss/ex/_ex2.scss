@@ -1,0 +1,360 @@
+body {
+	word-wrap: break-word;
+	line-height: 1.3;
+	box-sizing: border-box;
+}
+
+body,
+div {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	letter-spacing: -0.05em;
+	word-break: keep-all;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+.contents {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 0;
+	position: relative;
+}
+
+.location {
+	position: relative;
+	width: 100%;
+	max-width: 1280px;
+	padding: 32px 0;
+	margin: 0 auto;
+	font-size: 0;
+	text-align: left;
+}
+
+.location a {
+	color: #666;
+	margin-left: 4px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.location a:after {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: -1px 4px;
+	background: url(/assets/images/common_new/mo/icon_arrow.png) no-repeat 0 0 /
+		100% auto;
+}
+
+.location strong {
+	color: #000;
+	margin-left: 4px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.contents__util {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-bottom: -9px;
+}
+
+.contents__share {
+	float: left;
+	position: relative;
+}
+
+.contents__share--trigger {
+	background-image: url(../images/common_new/ico_share.png);
+	background-size: 40px auto;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	margin-left: 7px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+button {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.contents__share .sns-list {
+	right: 40px;
+	height: 40px;
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #f2f3f4;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.contents__share .sns-list__item {
+	float: left;
+	height: 100%;
+}
+
+.contents__share .sns-list__item a {
+	display: block;
+	overflow: hidden;
+	width: 39px;
+	height: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.contents__share .sns-list__item--facebook {
+	background-image: url(https://www.culture.go.kr/assets/images/common/ico_contents_share_facebook.png);
+}
+
+.location a:after {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: -1px 4px;
+	background: url(/assets/images/common_new/mo/icon_arrow.png) no-repeat 0 0 /
+		100% auto;
+}
+
+.contents__share .sns-list__item:not(:first-child) {
+	border-left: 1px solid #ccc;
+}
+
+.contents__share .sns-list__item a.sns-list__item--copy {
+	line-height: 38px;
+	width: 71px;
+	color: #201f2d;
+	font-size: 13px;
+	text-align: center;
+	text-indent: inherit;
+}
+
+.contents__share .sns-list:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.contents__share .sns-list {
+	visibility: hidden;
+}
+
+.contents__util--brail {
+	width: 40px;
+	height: 40px;
+	background-image: url(/assets/images/common_new/mo/icon_brail.png);
+	background-size: 40px auto;
+}
+
+.contents__util--brail,
+.contents__util--brailprint {
+	overflow: hidden;
+	float: left;
+	margin-left: 7px;
+	width: 33px;
+	height: 33px;
+	margin-left: 7px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+.contents__util--brailprint {
+	width: 40px;
+	height: 40px;
+	background-image: url(/assets/images/common_new/mo/icon_brailprint.png);
+	background-size: 40px auto;
+}
+
+.contents__util--print {
+	background-image: url(../images/common_new/mo/icon_print.png);
+	background-size: 40px auto;
+}
+
+.contents__share--trigger,
+.contents__util--print {
+	width: 40px;
+	height: 40px;
+}
+
+.contents__util--print {
+	float: left;
+	margin-left: 7px;
+	background-image: url(../images/common/btn_print.png);
+}
+
+.contents__share--trigger,
+.contents__util--print {
+	overflow: hidden;
+	width: 33px;
+	height: 33px;
+	margin-left: 7px;
+	background-image: url(../images/common/btn_share.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.section-inner {
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+
+.title-area {
+	margin-top: 2px;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.title-h1 {
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 0.83;
+	letter-spacing: -1.2px;
+	color: #000;
+}
+
+.title-h1 .txt {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 25px;
+	font-size: 18px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	line-height: 1.78;
+	font-weight: 400;
+	letter-spacing: -0.45px;
+	color: #666;
+}
+
+.section-inner {
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+
+.section-exam .wrap-exam {
+	height: 325px;
+	padding: 100px 56px 45px 56px;
+	background: rgb(185, 161, 237);
+	border-radius: 30px;
+}
+
+.section-exam {
+	.title-h4 {
+		font-size: 32px;
+		margin-right: 8px;
+		margin-top: 80px;
+		font-weight: bold;
+		color: #000;
+		line-height: 1.25;
+		letter-spacing: -0.8px;
+	}
+	.organ-inner {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+
+		.organ-wrap {
+			width: calc(33% - 20px);
+			margin-top: 40px;
+			border: 1px solid #666;
+			border-radius: 16px;
+
+			.organ-top {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				padding: 20px 20px 10px 20px;
+				position: relative;
+
+				.border-left::after {
+					content: "";
+					display: inline-block;
+					height: 39px;
+					width: 1px;
+					background-color: #000;
+					position: absolute;
+					top: 28px;
+					left: 142px;
+				}
+
+				.logo-ico {
+					width: 120px;
+					height: 50px;
+				}
+
+				.icon::before {
+					content: url(../../img/link-ico.png);
+					display: inline-block;
+					height: 20px;
+					width: 20px;
+					top: 10px;
+					margin-left: 10px;
+				}
+			}
+
+			.organ-middle {
+				background: #4e5f71;
+				height: 75px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				color: #fff;
+			}
+
+			.organ-bottom {
+				padding: 10px 20px 20px 20px;
+
+				li {
+					line-height: 28px;
+					font-size: 13px;
+					span {
+						background: orange;
+						border-radius: 12px;
+						padding: 1px 10px;
+						color: #fff;
+						font-size: inherit;
+						margin-right: 10px;
+					}
+				}
+			}
+
+			.link-layer {
+				display: none;
+
+				&.on {
+					display: block;
+				}
+			}
+		}
+	}
+}
