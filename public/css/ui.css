@@ -169,214 +169,29 @@ div {
   position: relative;
 }
 
-.location {
-  position: relative;
-  width: 100%;
-  max-width: 1280px;
-  padding: 32px 0;
-  margin: 0 auto;
-  font-size: 0;
-  text-align: left;
-}
-
-.location a {
-  color: #666;
-  margin-left: 4px;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.location a:after {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: -1px 4px;
-  background: url(/assets/images/common_new/mo/icon_arrow.png) no-repeat 0 0/100% auto;
-}
-
-.location strong {
-  color: #000;
-  margin-left: 4px;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.contents__util {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-bottom: -9px;
-}
-
-.contents__share {
-  float: left;
-  position: relative;
-}
-
-.contents__share--trigger {
-  background-image: url(../images/common_new/ico_share.png);
-  background-size: 40px auto;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  margin-left: 7px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  text-indent: 100%;
-  white-space: nowrap;
-}
-
-button {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.contents__share .sns-list {
-  right: 40px;
-  height: 40px;
-  visibility: hidden;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  background-color: #f2f3f4;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.contents__share .sns-list__item {
-  float: left;
-  height: 100%;
-}
-
-.contents__share .sns-list__item a {
-  display: block;
-  overflow: hidden;
-  width: 39px;
-  height: 100%;
-  text-indent: 100%;
-  white-space: nowrap;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.contents__share .sns-list__item--facebook {
-  background-image: url(https://www.culture.go.kr/assets/images/common/ico_contents_share_facebook.png);
-}
-
-.location a:after {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: -1px 4px;
-  background: url(/assets/images/common_new/mo/icon_arrow.png) no-repeat 0 0/100% auto;
-}
-
-.contents__share .sns-list__item:not(:first-child) {
-  border-left: 1px solid #ccc;
-}
-
-.contents__share .sns-list__item a.sns-list__item--copy {
-  line-height: 38px;
-  width: 71px;
-  color: #201f2d;
-  font-size: 13px;
-  text-align: center;
-  text-indent: inherit;
-}
-
-.contents__share .sns-list:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.contents__share .sns-list {
-  visibility: hidden;
-}
-
-.contents__util--brail {
-  width: 40px;
-  height: 40px;
-  background-image: url(/assets/images/common_new/mo/icon_brail.png);
-  background-size: 40px auto;
-}
-
-.contents__util--brail,
-.contents__util--brailprint {
-  overflow: hidden;
-  float: left;
-  margin-left: 7px;
-  width: 33px;
-  height: 33px;
-  margin-left: 7px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-indent: 100%;
-  white-space: nowrap;
-}
-
-.contents__util--brailprint {
-  width: 40px;
-  height: 40px;
-  background-image: url(/assets/images/common_new/mo/icon_brailprint.png);
-  background-size: 40px auto;
-}
-
-.contents__util--print {
-  background-image: url(../images/common_new/mo/icon_print.png);
-  background-size: 40px auto;
-}
-
-.contents__share--trigger,
-.contents__util--print {
-  width: 40px;
-  height: 40px;
-}
-
-.contents__util--print {
-  float: left;
-  margin-left: 7px;
-  background-image: url(../images/common/btn_print.png);
-}
-
-.contents__share--trigger,
-.contents__util--print {
-  overflow: hidden;
-  width: 33px;
-  height: 33px;
-  margin-left: 7px;
-  background-image: url(../images/common/btn_share.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  text-indent: 100%;
-  white-space: nowrap;
+.section-main {
+  margin-top: 50px;
 }
 
 .section-inner {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   position: relative;
 }
 
 .title-area {
-  margin-top: 2px;
-  margin-bottom: 35px;
+  margin-top: 0.125rem;
+  margin-bottom: 2.1875rem;
   text-align: center;
 }
 
 .title-h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 0.83;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.075rem;
   color: #000;
 }
 
@@ -385,15 +200,15 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 25px;
-  font-size: 18px;
+  margin-top: 1.5625rem;
+  font-size: 1.125rem;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   line-height: 1.78;
   font-weight: 400;
-  letter-spacing: -0.45px;
+  letter-spacing: -0.0281rem;
   color: #666;
 }
 
@@ -401,100 +216,143 @@ button {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   position: relative;
 }
 
-.section-exam .wrap-exam {
-  height: 325px;
-  padding: 100px 56px 45px 56px;
-  background: rgb(185, 161, 237);
-  border-radius: 30px;
+.section-exam .wrap-exam-banner img {
+  width: 100%;
 }
 
 .section-exam .title-h4 {
-  font-size: 32px;
-  margin-right: 8px;
-  margin-top: 80px;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  margin-top: 5rem;
   font-weight: bold;
   color: #000;
   line-height: 1.25;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.05rem;
+}
+.section-exam .title-h4:first-child {
+  margin-top: 3.125rem;
 }
 .section-exam .organ-inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 1.875rem;
 }
 .section-exam .organ-inner .organ-wrap {
   width: calc(33% - 20px);
-  margin-top: 40px;
-  border: 1px solid #666;
-  border-radius: 16px;
+  margin-top: 2.125rem;
+  border: 1px solid #dddddd;
+  border-radius: 1rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-top {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 20px 20px 10px 20px;
+  height: 80px;
+  gap: 0.625rem;
+  padding: 0.9375rem 1.25rem 0.625rem 1.25rem;
   position: relative;
+}
+.section-exam .organ-inner .organ-wrap .organ-top .border-left {
+  font-size: 1rem;
+  letter-spacing: -0.1rem;
+  line-height: 1.375rem;
+  font-weight: 500;
 }
 .section-exam .organ-inner .organ-wrap .organ-top .border-left::after {
   content: "";
   display: inline-block;
-  height: 39px;
-  width: 1px;
-  background-color: #000;
+  height: 3.125rem;
+  width: 0.0625rem;
+  background-color: #dddddd;
   position: absolute;
-  top: 28px;
-  left: 142px;
+  top: 1.375rem;
+  left: 8.875rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-top .logo-ico {
-  width: 120px;
-  height: 50px;
+  width: 3.5rem;
+  height: 1.125rem;
+  padding-right: 0.3125rem;
+}
+.section-exam .organ-inner .organ-wrap .organ-top .icon {
+  background: #e42c01;
+  border-radius: 50%;
+  width: 2.625rem;
+  height: 2.625rem;
+  position: relative;
 }
 .section-exam .organ-inner .organ-wrap .organ-top .icon::before {
   content: url(../../img/link-ico.png);
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  top: 10px;
-  margin-left: 10px;
+  height: 1.25rem;
+  width: 1.25rem;
+  top: 0.625rem;
+  margin-left: 0.625rem;
+  position: absolute;
 }
 .section-exam .organ-inner .organ-wrap .organ-middle {
-  background: #4e5f71;
-  height: 75px;
+  background: #dddddd;
+  height: 5.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: #000;
+  font-size: 1.25rem;
+  letter-spacing: -0.0125rem;
+  text-align: left;
+  font-weight: bold;
+}
+.section-exam .organ-inner .organ-wrap .organ-middle.yeoncheon {
+  font-size: 0.9375rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-bottom {
-  padding: 10px 20px 20px 20px;
+  padding: 0.8125rem 1.25rem 1.0625rem 1.25rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-bottom li {
-  line-height: 28px;
-  font-size: 13px;
+  line-height: 1.625rem;
+  font-size: 1rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-bottom li span {
-  background: orange;
-  border-radius: 12px;
-  padding: 1px 10px;
-  color: #fff;
-  font-size: inherit;
-  margin-right: 10px;
+  border-radius: 1.25rem;
+  padding: 0.1875rem 0.5rem;
+  border: 0.0625rem solid #e42c01;
+  color: #e42c01;
+  font-size: 1rem;
+  line-height: 2.5625rem;
+  margin-right: 1rem;
+  font-weight: bold;
 }
 .section-exam .organ-inner .organ-wrap .icon-event {
   cursor: pointer;
+  position: relative;
 }
 .section-exam .organ-inner .organ-wrap .link-layer {
   display: none;
+  position: absolute;
 }
 .section-exam .organ-inner .organ-wrap .link-layer.on {
   display: block;
 }
+.section-exam .library-inner {
+  display: flex;
+}
+.section-exam .library-inner .organ-wrap {
+  width: calc(50% - 15px);
+}
 
+@media (max-width: 1300px) {
+  .section-exam .organ-inner .organ-wrap {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 899px) {
+  .section-exam .organ-inner .organ-wrap {
+    width: 100%;
+  }
+}
 /*이찬용*/
 
 /*# sourceMappingURL=ui.css.map */
