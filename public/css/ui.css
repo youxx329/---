@@ -284,12 +284,10 @@ a:link {
   left: 9.5rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-top .logo-ico {
-  width: 8rem;
-  height: 2.5rem;
   vertical-align: bottom;
 }
 .section-exam .organ-inner .organ-wrap .organ-top .icon::before {
-  content: url(../../img/link-ico.png);
+  content: url(../img/link-ico.png);
   display: inline-block;
   height: 1.25rem;
   width: 1.25rem;
@@ -309,8 +307,8 @@ a:link {
   font-weight: bold;
   padding: 20px;
 }
-.section-exam .organ-inner .organ-wrap .organ-middle.yeoncheon {
-  font-size: 0.9375rem;
+.section-exam .organ-inner .organ-wrap .organ-middle.font-size {
+  font-size: 18px;
 }
 .section-exam .organ-inner .organ-wrap .organ-bottom {
   padding: 0.8125rem 1.25rem 1.0625rem 1.25rem;
@@ -318,6 +316,7 @@ a:link {
 .section-exam .organ-inner .organ-wrap .organ-bottom li {
   line-height: 2.725rem;
   font-size: 1rem;
+  font-weight: 500;
 }
 .section-exam .organ-inner .organ-wrap .organ-bottom li span {
   border-radius: 1.25rem;
@@ -333,7 +332,7 @@ a:link {
   cursor: pointer;
 }
 .section-exam .organ-inner .organ-wrap .icon-event::before {
-  content: url(../../img/link-ico.png);
+  content: url(../img/link-ico.png);
   display: inline-block;
   height: 1.25rem;
   width: 1.25rem;
