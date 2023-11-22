@@ -90,7 +90,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: "Oswald", sans-serif;
   box-sizing: border-box;
 }
 
@@ -148,6 +147,7 @@ body {
   word-wrap: break-word;
   line-height: 1.3;
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body,
@@ -162,6 +162,18 @@ div {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+a:visited {
+  color: initial;
+}
+
+a:focus {
+  color: initial;
+}
+
+a:link {
+  color: initial;
+}
+
 .contents {
   max-width: 1400px;
   margin: 0 auto;
@@ -170,7 +182,7 @@ div {
 }
 
 .section-main {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .section-inner {
@@ -206,10 +218,10 @@ div {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  line-height: 1.78;
+  line-height: 2rem;
   font-weight: 400;
   letter-spacing: -0.0281rem;
-  color: #666;
+  color: #999999;
 }
 
 .section-inner {
@@ -251,7 +263,6 @@ div {
   display: flex;
   align-items: center;
   height: 80px;
-  gap: 0.625rem;
   padding: 0.9375rem 1.25rem 0.625rem 1.25rem;
   position: relative;
 }
@@ -260,6 +271,7 @@ div {
   letter-spacing: -0.1rem;
   line-height: 1.375rem;
   font-weight: 500;
+  padding-left: 0.625rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-top .border-left::after {
   content: "";
@@ -268,42 +280,34 @@ div {
   width: 0.0625rem;
   background-color: #dddddd;
   position: absolute;
-  top: 1.375rem;
-  left: 8.875rem;
+  top: 1.0625rem;
+  left: 9.5rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-top .logo-ico {
-  width: 3.5rem;
-  height: 1.125rem;
-  padding-right: 0.3125rem;
-}
-.section-exam .organ-inner .organ-wrap .organ-top .icon {
-  background: #e42c01;
-  border-radius: 50%;
-  width: 2.625rem;
-  height: 2.625rem;
-  position: relative;
+  width: 8rem;
+  height: 2.5rem;
+  vertical-align: bottom;
 }
 .section-exam .organ-inner .organ-wrap .organ-top .icon::before {
   content: url(../../img/link-ico.png);
   display: inline-block;
   height: 1.25rem;
   width: 1.25rem;
-  top: 0.625rem;
-  margin-left: 0.625rem;
+  top: 1.25rem;
+  right: 2.0625rem;
   position: absolute;
 }
 .section-exam .organ-inner .organ-wrap .organ-middle {
   background: #dddddd;
   height: 5.875rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   color: #000;
   font-size: 1.25rem;
   letter-spacing: -0.0125rem;
   text-align: left;
   font-weight: bold;
+  padding: 20px;
 }
 .section-exam .organ-inner .organ-wrap .organ-middle.yeoncheon {
   font-size: 0.9375rem;
@@ -312,12 +316,12 @@ div {
   padding: 0.8125rem 1.25rem 1.0625rem 1.25rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-bottom li {
-  line-height: 1.625rem;
+  line-height: 2.725rem;
   font-size: 1rem;
 }
 .section-exam .organ-inner .organ-wrap .organ-bottom li span {
   border-radius: 1.25rem;
-  padding: 0.1875rem 0.5rem;
+  padding: 0.3125rem 0.75rem;
   border: 0.0625rem solid #e42c01;
   color: #e42c01;
   font-size: 1rem;
@@ -327,13 +331,46 @@ div {
 }
 .section-exam .organ-inner .organ-wrap .icon-event {
   cursor: pointer;
-  position: relative;
 }
-.section-exam .organ-inner .organ-wrap .link-layer {
-  display: none;
+.section-exam .organ-inner .organ-wrap .icon-event::before {
+  content: url(../../img/link-ico.png);
+  display: inline-block;
+  height: 1.25rem;
+  width: 1.25rem;
+  top: 1.25rem;
+  right: 2.0625rem;
   position: absolute;
 }
-.section-exam .organ-inner .organ-wrap .link-layer.on {
+.section-exam .organ-inner .organ-wrap .icon-event .link-layer-wrap {
+  border-radius: 5px;
+}
+.section-exam .organ-inner .organ-wrap .icon-event .link-layer {
+  display: none;
+  position: absolute;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background: #fff;
+  top: 4.25rem;
+  right: 0.625rem;
+  overflow: hidden;
+}
+.section-exam .organ-inner .organ-wrap .icon-event .link-layer li {
+  color: #000;
+  text-align: center;
+  line-height: 1.375rem;
+}
+.section-exam .organ-inner .organ-wrap .icon-event .link-layer li a {
+  width: 100%;
+  display: inline-block;
+  padding: 0.75rem 1.5625rem;
+}
+.section-exam .organ-inner .organ-wrap .icon-event .link-layer li:hover {
+  background: #e42c01;
+}
+.section-exam .organ-inner .organ-wrap .icon-event .link-layer li a:hover {
+  color: #fff;
+}
+.section-exam .organ-inner .organ-wrap .icon-event .link-layer.on {
   display: block;
 }
 .section-exam .library-inner {
@@ -343,14 +380,19 @@ div {
   width: calc(50% - 15px);
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .section-exam .organ-inner .organ-wrap {
     width: calc(50% - 20px);
   }
 }
-@media (max-width: 899px) {
+@media screen and (max-width: 899px) {
   .section-exam .organ-inner .organ-wrap {
     width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-main .section-inner .title-h1 {
+    font-size: 1rem;
   }
 }
 /*이찬용*/
